@@ -1,0 +1,8 @@
+.custom-nav-link {
+  &__wrap {
+    padding: 0 5px;
+  }
+  &--active {
+    color: blue;
+  }
+}
