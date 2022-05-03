@@ -2,13 +2,17 @@
 
 .container {
   margin: 0 auto;
-  width: 280px;
+  padding: 0 $gutter-sm;
 
   @media only screen and (min-width: 768px){
-    width: 550px;
+    width: 650px;
   }
 
   @media only screen and (min-width: 1024px){
     width: 880px;
+  }
+
+  @media only screen and (min-width: 1280px){
+    width: 1080px;
   }
 }

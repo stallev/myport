@@ -1,8 +1,11 @@
+@import '../../../styles/variables';
+
 .custom-nav-link {
   &__wrap {
     padding: 0 5px;
   }
   &--active {
-    color: blue;
+    text-decoration: underline;
+    color: $color-red;
   }
 }

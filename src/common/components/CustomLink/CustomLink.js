@@ -7,12 +7,16 @@ import styles from './styles/_custom-link.module.scss';
 const CustomLink = ({
   label,
   className,
-  to
+  to,
+  isLikeButton
 }) => {
   return (
     <div
       className={cx(
         styles['custom-link'],
+        {
+          [styles['custom-link--like-button']]: isLikeButton
+        },
         className
       )}
     >

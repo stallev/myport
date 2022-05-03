@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Header, Container } from '../../components/'
+import { Header, Container, Footer } from '../../components/'
 
 const Layout = () => {
   return (
@@ -9,6 +9,7 @@ const Layout = () => {
       <Container>
         <Outlet />
       </Container>
+      <Footer />
     </>
   );
 };
