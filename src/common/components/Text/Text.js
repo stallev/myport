@@ -10,7 +10,7 @@ const Text = ({
   iconPrefixClassName,
   iconSuffixClassName,
   className,
-  color = 'white',
+  color = 'main-text',
   children,
   onClick,
   ...props
