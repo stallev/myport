@@ -13,7 +13,7 @@ function App() {
         <Route path={RoutePath.Landing} element={<Layout />}>
           <Route index element={<Landing />} />
           <Route path={RoutePath.WorksList} element={<WorksList />} />
-          <Route path={RoutePath.Work} element={<Work />} />
+          <Route path={`${RoutePath.Work}/:id`} element={<Work />} />
           <Route path={RoutePath.Contacts} element={<Contacts />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
