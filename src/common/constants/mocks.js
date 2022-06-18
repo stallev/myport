@@ -56,3 +56,41 @@ export const mySocials = [
     socialUrl: 'https://www.linkedin.com/in/alexandr-levshenko-587377100/'
   },
 ];
+
+export const MyTechnologies = [
+  {
+    id: 1,
+    name: 'gulp',
+    iconName: 'gulp',
+  },
+  {
+    id: 2,
+    name: 'html5',
+    iconName: 'html5',
+  },
+  {
+    id: 3,
+    name: 'javascriptIcon',
+    iconName: 'javascriptIcon',
+  },
+  {
+    id: 4,
+    name: 'php',
+    iconName: 'php',
+  },
+  {
+    id: 5,
+    name: 'react',
+    iconName: 'react',
+  },
+  {
+    id: 6,
+    name: 'sass',
+    iconName: 'sass',
+  },
+  {
+    id: 7,
+    name: 'wordpress',
+    iconName: 'wordpress',
+  },
+];
