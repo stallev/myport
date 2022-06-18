@@ -5,5 +5,6 @@ export { default as Container } from './Container';
 export { default as Header } from './Header';
 export { default as CustomLink } from './CustomLink';
 export { default as WorksItem } from './WorksItem';
+export { default as TechnologyItem } from './TechnologyItem';
 export { default as Footer } from './Footer';
 export { default as Layout } from './Layout';

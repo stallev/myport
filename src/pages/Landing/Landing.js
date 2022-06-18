@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { RoutePath } from '../../common/constants/RoutePath';
-import { MyWorks } from '../../common/constants';
-import { Text, Image, CustomLink, WorksItem } from '../../common/components';
+import { MyWorks, MyTechnologies } from '../../common/constants';
+import { Text, Image, CustomLink, WorksItem, TechnologyItem } from '../../common/components';
 
 import styles from './styles/_landing.module.scss';
 
@@ -13,6 +13,13 @@ const Landing = () => {
       ))
     )
   }, MyWorks);
+  const renderMyTechnologies = useMemo(() => {
+    return(
+      MyTechnologies.map((item) => (
+        <TechnologyItem iconName={item.iconName} key={item.id} />
+      ))
+    )
+  }, MyTechnologies);
   return (
     <>
       <div className={styles.landing__top}>
@@ -33,6 +40,9 @@ const Landing = () => {
             isLikeButton
           />
         </div>
+      </div>
+      <div className={styles['landing__technology-list']}>
+        {renderMyTechnologies}
       </div>
       <div className={styles['landing__works-list']}>
         {renderMyWorks}
