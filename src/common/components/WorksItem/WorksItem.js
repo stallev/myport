@@ -5,6 +5,18 @@ import Image from '../Image';
 import styles from './styles/_works-item.module.scss';
 
 const WorkItem = ({worksItemData}) => {
+  const renderItemTechnologies = (source) => {
+    return(
+      source.map((item) => (
+        <span 
+          className={styles['works-item__technologies-item']} 
+          key={item.id}
+        >
+          {item.name}
+        </span>
+      ))
+    )
+  };
   return (
     <article className={styles['works-item']} key={worksItemData.id}>
       <Image
@@ -21,6 +33,9 @@ const WorkItem = ({worksItemData}) => {
           <Text className={styles['works-item__type']}>{worksItemData.title}</Text>
         </div>
         <Text className={styles['works-item__description']}>{worksItemData.description}</Text>
+        <div className={styles['works-item__technologies-list']}>
+          {renderItemTechnologies(worksItemData.technologies)}
+        </div>
       </div>
     </article>
   );

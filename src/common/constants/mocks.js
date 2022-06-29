@@ -6,7 +6,21 @@ export const MyWorks = [
     type: 'Dashboard',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perspiciatis iste ducimus sequi, similique ipsum quisquam quas sed soluta expedita maxime aperiam eligendi quidem dolorem placeat cum nobis, consequuntur sit velit officia deserunt repellendus! Nihil eos doloribus dignissimos nulla dolore.',
     image: 'image1',
-    to: '/'
+    to: '/',
+    technologies: [
+      {
+        id: 1,
+        name: 'React'
+      },
+      {
+        id: 2,
+        name: 'SCSS'
+      },
+      {
+        id: 3,
+        name: 'Redux'
+      }
+    ]
   },
 
   {
@@ -16,7 +30,21 @@ export const MyWorks = [
     type: 'Dashboard',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perspiciatis iste ducimus sequi, similique ipsum quisquam quas sed soluta expedita maxime aperiam eligendi quidem dolorem placeat cum nobis, consequuntur sit velit officia deserunt repellendus! Nihil eos doloribus dignissimos nulla dolore.',
     image: 'image2',
-    to: '/'
+    to: '/',
+    technologies: [
+      {
+        id: 1,
+        name: 'React'
+      },
+      {
+        id: 2,
+        name: 'SCSS'
+      },
+      {
+        id: 3,
+        name: 'Redux'
+      }
+    ]
   },
 
   {
@@ -26,7 +54,21 @@ export const MyWorks = [
     type: 'Dashboard',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perspiciatis iste ducimus sequi, similique ipsum quisquam quas sed soluta expedita maxime aperiam eligendi quidem dolorem placeat cum nobis, consequuntur sit velit officia deserunt repellendus! Nihil eos doloribus dignissimos nulla dolore.',
     image: 'image3',
-    to: '/'
+    to: '/',
+    technologies: [
+      {
+        id: 1,
+        name: 'React'
+      },
+      {
+        id: 2,
+        name: 'SCSS'
+      },
+      {
+        id: 3,
+        name: 'Redux'
+      }
+    ]
   },
 ];
 
@@ -62,11 +104,6 @@ export const MyTechnologies = [
     id: 1,
     name: 'gulp',
     iconName: 'gulp',
-  },
-  {
-    id: 2,
-    name: 'html5',
-    iconName: 'html5',
   },
   {
     id: 3,
