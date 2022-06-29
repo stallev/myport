@@ -25,9 +25,11 @@
 
   &__image {
     width: fit-content;
+    align-self: center;
     flex-shrink: 0;
 
     @media only screen and (min-width: 768px) {
+      align-self: flex-start;
       margin-right: $gutter-ml;
     }
   }
@@ -66,5 +68,21 @@
     max-height: calc(#{$line-height-xxs} * 3);
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+  }
+
+  &__technologies-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $gutter-sm;
+  }
+
+  &__technologies-item {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: $gutter-base;
+    color: $color-white;
+    background: $color-dark-brown;
+    font-size: $font-size-xxs;
+    border-radius: 4px;
   }
 }

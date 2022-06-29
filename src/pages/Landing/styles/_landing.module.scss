@@ -29,11 +29,20 @@
   }
 
   &__technology-list {
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background: $color-light-blue;  
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    background: $color-light-blue;
+
+    @media only screen and (min-width: 420px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (min-width: 650px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   &__works {

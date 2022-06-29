@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from '../Icon';
 
-import styles from './styles/_technology.module.scss';
+import styles from './styles/_technology-item.module.scss';
 
 const TechnologyItem = ({iconName}) => {
   return (
