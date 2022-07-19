@@ -5,6 +5,7 @@ import menu from "../../../assets/icons/menu.svg";
 import twitter from "../../../assets/icons/twitter.svg";
 import gulp from "../../../assets/icons/gulpjs.svg";
 import html5 from "../../../assets/icons/html5.svg";
+import github from "../../../assets/icons/github.svg";
 import javascriptIcon from "../../../assets/icons/javascript.svg";
 import php from "../../../assets/icons/php.svg";
 import react from "../../../assets/icons/react.svg";
@@ -19,6 +20,7 @@ export const allIcons = {
   twitter,
   gulp,
   html5,
+  github,
   javascriptIcon,
   php,
   react,

@@ -1,16 +1,18 @@
 export const MyWorks = [
   {
     id: '123',
-    title: 'Dashboards',
-    year: '2018',
-    type: 'Dashboard',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perspiciatis iste ducimus sequi, similique ipsum quisquam quas sed soluta expedita maxime aperiam eligendi quidem dolorem placeat cum nobis, consequuntur sit velit officia deserunt repellendus! Nihil eos doloribus dignissimos nulla dolore.',
-    image: 'image1',
+    title: 'Catalog of clothes and testile',
+    year: '2021',
+    type: 'Internet shop',
+    siteLink: 'https://legrabest.ru/',
+    githubLink: 'https://github.com/stallev/cloShop',
+    description: 'Wordpress theme. Catalog of clothing and testil. Adaptive design. Mockup layout and integration with Wordpress CMS. Catalog pages, product pages, customizable admin panel. Feedback form.',
+    image: 'site1',
     to: '/',
     technologies: [
       {
         id: 1,
-        name: 'React'
+        name: 'Wordpress'
       },
       {
         id: 2,
@@ -18,23 +20,29 @@ export const MyWorks = [
       },
       {
         id: 3,
-        name: 'Redux'
+        name: 'JS'
+      },
+      {
+        id: 4,
+        name: 'PHP'
       }
     ]
   },
 
   {
     id: '124',
-    title: 'Dashboards',
-    year: '2018',
+    title: 'Online store of tires and disks',
+    year: '2021',
     type: 'Dashboard',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perspiciatis iste ducimus sequi, similique ipsum quisquam quas sed soluta expedita maxime aperiam eligendi quidem dolorem placeat cum nobis, consequuntur sit velit officia deserunt repellendus! Nihil eos doloribus dignissimos nulla dolore.',
-    image: 'image2',
+    siteLink: 'https://k3.stallevs.ru/',
+    githubLink: 'https://github.com/stallev/maz',
+    description: 'HTML template. Online store of tires and disks. Adaptive design. Shop, categories. Fully responsive. shopping cart and checkout. Feedback form. Product pages, product grids and carousels, product filters and more!',
+    image: 'site2',
     to: '/',
     technologies: [
       {
         id: 1,
-        name: 'React'
+        name: 'JS'
       },
       {
         id: 2,
@@ -42,17 +50,19 @@ export const MyWorks = [
       },
       {
         id: 3,
-        name: 'Redux'
+        name: 'JQuery'
       }
     ]
   },
 
   {
     id: '126',
-    title: 'Dashboards',
-    year: '2020',
+    title: 'Weather application',
+    year: '2022',
     type: 'Dashboard',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perspiciatis iste ducimus sequi, similique ipsum quisquam quas sed soluta expedita maxime aperiam eligendi quidem dolorem placeat cum nobis, consequuntur sit velit officia deserunt repellendus! Nihil eos doloribus dignissimos nulla dolore.',
+    siteLink: 'https://k3.stallevs.ru/',
+    githubLink: 'https://github.com/stallev/weather',
+    description: 'React application. Weather forecast app. Getting data from the API, rendering daily and hourly forecast cards. Working with Redux',
     image: 'image3',
     to: '/',
     technologies: [

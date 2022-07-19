@@ -5,6 +5,7 @@ import cx from 'classnames';
 import styles from './styles/_custom-link.module.scss';
 
 const CustomLink = ({
+  children,
   label,
   className,
   to,
@@ -23,11 +24,11 @@ const CustomLink = ({
       <Link
         to={to}
         className={cx(
-          'custom-link',
-          className
+          'custom-link'
         )}
       >
         {label}
+        {children}
       </Link> 
     </div>
   );
