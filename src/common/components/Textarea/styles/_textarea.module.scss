@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.textarea {
+  color: $color-main-text;
+  max-width: 450px;
+  height: 170px;
+  
+  &:not(:last-of-type) {
+    margin-bottom: $gutter-md;
+  }
+
+  @media only screen and (min-width: 768px){
+  }
+
+  &__field {
+    display: inline-block;
+    padding: $gutter-sm $gutter-base;
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    border: 1px solid $color-dark-brown;
+  }
+}

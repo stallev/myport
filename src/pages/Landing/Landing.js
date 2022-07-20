@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
+import { useForm } from "react-hook-form";
 import { RoutePath } from '../../common/constants/RoutePath';
 import { MyWorks, MyTechnologies } from '../../common/constants';
-import { Text, Image, CustomLink, WorksItem, TechnologyItem } from '../../common/components';
+import { Text, ContactsForm, Image, CustomLink, WorksItem, TechnologyItem } from '../../common/components';
 
 import styles from './styles/_landing.module.scss';
 
@@ -12,14 +13,18 @@ const Landing = () => {
         <WorksItem worksItemData={work} key={work.id} />
       ))
     )
-  }, MyWorks);
+  }, [MyWorks]);
   const renderMyTechnologies = useMemo(() => {
     return(
       MyTechnologies.map((item) => (
         <TechnologyItem iconName={item.iconName} key={item.id} />
       ))
     )
-  }, MyTechnologies);
+  }, [MyTechnologies]);
+
+  const { register, handleSubmit } = useForm();
+  const onSubmit = data => console.log(data);
+
   return (
     <>
       <div className={styles.landing__top}>
@@ -47,6 +52,7 @@ const Landing = () => {
       <div className={styles['landing__works-list']}>
         {renderMyWorks}
       </div>
+      <ContactsForm />
       <div className={styles['landing__contacts']}></div>
     </>
   );
