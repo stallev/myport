@@ -25,12 +25,20 @@
 
   &__image {
     width: fit-content;
+    max-width: 40%;
     align-self: center;
     flex-shrink: 0;
+    border-radius: 10px;    
 
     @media only screen and (min-width: 768px) {
       align-self: flex-start;
       margin-right: $gutter-ml;
+      max-width: 25%;
+    }
+
+    img {
+      border-radius: inherit;
+      border: 2px solid $color-dark-brown;
     }
   }
 
