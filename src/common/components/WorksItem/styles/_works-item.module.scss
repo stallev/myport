@@ -25,25 +25,33 @@
 
   &__image {
     width: fit-content;
+    max-width: 40%;
     align-self: center;
     flex-shrink: 0;
+    border-radius: 10px;    
 
     @media only screen and (min-width: 768px) {
       align-self: flex-start;
       margin-right: $gutter-ml;
+      max-width: 25%;
+    }
+
+    img {
+      border-radius: inherit;
+      border: 2px solid $color-dark-brown;
     }
   }
 
   &__types-block {
     display: flex;
     align-items: center;
-    margin-bottom: $gutter-ml;
+    margin-bottom: $gutter-base;
   }
 
   &__year {
     display: inline-block;
     width: fit-content;
-    margin-right: 12px;
+    margin-right: $gutter-base;
     padding: 4px 22px;
     border-radius: 18px;
     font-size: $font-size-xs;
@@ -55,6 +63,34 @@
     margin-left: 12px;
     color: $color-text-gray;
     font-size: $font-size-xs;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    margin-left: $gutter-base;
+  }
+
+  &__link {
+    display: inline-block;
+    align-self: center;
+    height: fit-content;
+    margin-right: $gutter-base;
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+    color: $color-dark-brown;
+    font-weight: $font-weight-bold;
+
+    &:hover {
+      transition: all .3s linear;
+      color: $color-dark-brown;
+      text-decoration: underline;
+    }
+  }
+
+  &__github-link {
+    align-self: center;
+    max-height: 24px;
   }
 
   &__description {

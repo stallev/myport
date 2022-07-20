@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../Icon';
 import Text from '../Text';
 import Image from '../Image';
 
@@ -30,8 +31,21 @@ const WorkItem = ({worksItemData}) => {
         <div className={styles['works-item__types-block']}>
           <Text color='white' className={styles['works-item__year']}>{worksItemData.year}</Text>
           |
-          <Text className={styles['works-item__type']}>{worksItemData.title}</Text>
-        </div>
+          <div className={styles['works-item__links']}>
+            <a
+              className={styles['works-item__link']}
+              href={worksItemData.siteLink}
+            >
+              Go website...
+            </a>
+            <a
+              className={styles['works-item__github-link']}
+              href={worksItemData.githubLink}
+            >
+              <Icon iconName="github"/>
+            </a>
+          </div>
+        </div>        
         <Text className={styles['works-item__description']}>{worksItemData.description}</Text>
         <div className={styles['works-item__technologies-list']}>
           {renderItemTechnologies(worksItemData.technologies)}
