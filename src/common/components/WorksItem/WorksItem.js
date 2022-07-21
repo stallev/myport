@@ -36,7 +36,7 @@ const WorkItem = ({worksItemData}) => {
               className={styles['works-item__link']}
               href={worksItemData.siteLink}
             >
-              Go website...
+              Go to website...
             </a>
             <a
               className={styles['works-item__github-link']}

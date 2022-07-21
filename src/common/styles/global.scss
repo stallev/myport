@@ -101,3 +101,14 @@ input[type=radio] {
 input[type=checkbox] {
   display: none;
 }
+
+.error-message {
+  position: absolute;
+  width: inherit;
+  bottom: -16px;
+  left: 5px;
+  text-align: left;
+  font-size: 10px;
+  line-height: 1;
+  color: red;
+}
