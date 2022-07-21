@@ -9,24 +9,17 @@ const Button = ({
   onClick,
   className
 }) => {
-  console.log("Button111")
   return (
-    <div
+    <button
+      type={isSubmit ? "submit" : "button"}
       className={cx(
-        styles.button
+        styles.button,
+        className
       )}
+      onClick={onClick && onClick}
     >
-      <button
-        type={isSubmit ? "submit" : "button"}
-        className={cx(
-          styles.button__field,
-          className
-        )}
-        onClick={onClick && onClick}
-      >
-        {label}
-      </button>
-    </div>
+      {label}
+    </button>
   );
 };
 

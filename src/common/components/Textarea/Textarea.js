@@ -13,16 +13,16 @@ const Textarea = ({
   return (
     <div
       className={cx(
-        styles.textarea
+        styles.textarea,
+        className
       )}
     >
       <textarea
         placeholder={placeholder}
         className={cx(
           styles.textarea__field,
-          className
         )}
-        name={validation && validation.name}
+        {...validation}
         onChange={onChange || (validation && validation.onChange)}
       />
     </div>

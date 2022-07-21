@@ -7,6 +7,7 @@ const Input = ({
   placeholder,
   inputType,
   validation,
+  maxLength,
   onChange,
   className
 }) => {
@@ -14,17 +15,18 @@ const Input = ({
   return (
     <div
       className={cx(
-        styles.input
+        styles.input,
+        className
       )}
     >
       <input
         type={inputType}
         placeholder={placeholder}
+        maxLength={maxLength}
         className={cx(
-          styles.input__field,
-          className
+          styles.input__field,          
         )}
-        name={validation && validation.name}
+        {...validation}
         onChange={onChange || (validation && validation.onChange)}
       />
     </div>
