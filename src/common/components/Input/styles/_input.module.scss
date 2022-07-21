@@ -1,9 +1,10 @@
 @import '../../../styles/variables.scss';
 
 .input {
+  position: relative;
   color: $color-main-text;  
   max-width: 450px;
-  margin-bottom: $gutter-md;
+  margin-bottom: $gutter-ml;  
 
   @media only screen and (min-width: 768px){
   }
@@ -14,5 +15,8 @@
     width: 100%;
     border-radius: 10px;
     border: 1px solid $color-dark-brown;
+    &--error {
+      border: 1px solid red;
+    }
   }
 }
