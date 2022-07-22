@@ -11,6 +11,7 @@ import php from "../../../assets/icons/php.svg";
 import react from "../../../assets/icons/react.svg";
 import sass from "../../../assets/icons/sass.svg";
 import wordpress from "../../../assets/icons/wordpress.svg";
+import close from "../../../assets/icons/close.svg";
 
 export const allIcons = {
   fb,
@@ -25,5 +26,6 @@ export const allIcons = {
   php,
   react,
   sass,
-  wordpress
+  wordpress,
+  close
 };

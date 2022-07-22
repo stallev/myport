@@ -11,7 +11,6 @@ const Textarea = ({
   errorMessage,
   className
 }) => {
-  console.log(errorMessage);
   return (
     <div
       className={cx(
