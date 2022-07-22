@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import Input from '../Input';
+import Text from '../Text';
 import Textarea from '../Textarea';
 import Button from '../Button';
 import Modal from '../Modal';
@@ -64,7 +65,7 @@ const ContactsForm = () => {
         show={isShowModalInfo}
         isPopupInfo
       >
-        Thanks for the message. I will definitely answer you.
+        <Text>Thanks for the message. I will definitely answer you.</Text>
       </Modal>
     </>
   );
