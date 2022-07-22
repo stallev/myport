@@ -11,4 +11,5 @@ export { default as CustomLink } from './CustomLink';
 export { default as WorksItem } from './WorksItem';
 export { default as TechnologyItem } from './TechnologyItem';
 export { default as Footer } from './Footer';
+export { default as Modal } from './Modal';
 export { default as Layout } from './Layout';

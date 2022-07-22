@@ -4,7 +4,7 @@ import cx from 'classnames';
 import styles from './styles/_button.module.scss';
 
 const Button = ({
-  label,
+  buttonTitle,
   isSubmit,
   onClick,
   className
@@ -18,7 +18,7 @@ const Button = ({
       )}
       onClick={onClick && onClick}
     >
-      {label}
+      {buttonTitle}
     </button>
   );
 };
